@@ -1,0 +1,42 @@
+# Optional: ignore local secret files if created by mistake
+tubeget.secrets.json
+.env
+gemini.env
+set_gemini_env.bat
+
+# Build/cache/log artifacts
+__pycache__/
+*.pyc
+logs/
+testvideo/
+
+# Media artifacts
+*.mp4
+*.mp3
+*.mkv
+*.avi
+*.mov
+*.webm
+*.wav
+*.srt
+*.vtt
+*.rar
+*.zip
+*.7z
+
+# Runtime/report outputs
+*.gemini_log.json
+*.gemini_log.md
+*.gemini-run.txt
+*.gemini-compare.txt
+*.gemini-zh.txt
+*.dub-run.txt
+*.dub-status.json
+*.pipeline_metrics.json
+*.speech_activity_report.json
+*.speech_grouping_report.json
+*.tts_metrics.json
+*.qc-report.json
+*.qc-zh.srt
+*.qc-bilingual.srt
+*.speedup-table.csv

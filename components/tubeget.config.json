@@ -1,0 +1,252 @@
+{
+
+  "voice": "晓晓",
+
+  "voice_female": "晓晓",
+
+  "voice_male": "云希",
+
+  "engine": "edge+kokoro",
+
+  "kokoro_voice": "zf_xiaoxiao",
+
+  "rate": "+0%",
+
+  "no_original": true,
+
+  "original_vol": 0.0,
+
+  "dub_vol": 2.0,
+
+  "require_complete_dub": true,
+
+  "min_dub_success_rate": 0.98,
+
+  "max_ignored_missing_ratio": 0.001,
+
+  "allow_partial_dub": true,
+
+  "generate_sync_subtitles": false,
+
+  "generate_dub_qc_subtitles": true,
+
+  "final_retry_rounds": 2,
+
+  "cue_workers": 1,
+
+  "video_workers": 1,
+
+  "tts_concurrency": 2,
+
+  "edge_concurrency": 2,
+
+  "edge_launch_interval_sec": 4,
+
+  "edge_unit_timeout_sec": 45,
+
+  "edge_max_retries": 3,
+
+  "edge_retry_backoff_sec": [10, 30, 90],
+
+  "edge_timeout_sec": 45,
+
+  "edge_rounds": 4,
+
+  "edge_connectivity_probe": true,
+
+  "edge_ipv4_only": true,
+
+  "edge_segment_mode": true,
+
+  "edge_segment_profile": "large",
+
+  "edge_segment_chars_small": 280,
+
+  "edge_segment_chars_medium": 420,
+
+  "edge_segment_chars_large": 1000,
+
+  "edge_segment_chars_min": 850,
+
+  "edge_segment_concurrency": 4,
+
+  "edge_segment_concurrency_small": 3,
+
+  "edge_segment_concurrency_large": 5,
+
+  "edge_segment_launch_interval_sec": 1.5,
+
+  "edge_segment_timeout_sec": 75,
+
+  "edge_segment_timeout_small": 60,
+
+  "edge_segment_timeout_large": 90,
+
+  "edge_segment_warmup_count": 3,
+
+  "edge_segment_fallback_per_cue": true,
+
+  "zh_chars_per_sec": 3.2,
+
+  "max_playback_speed": 1.5,
+
+  "baseline_playback_speed": 1.0,
+
+  "pacing_enabled": true,
+
+  "pacing_reference_en_cps": 12.0,
+
+  "pacing_zh_normal_cps": 3.2,
+
+  "pacing_video_speed_min": 0.98,
+
+  "pacing_video_speed_max": 1.05,
+
+  "pacing_max_base_rate_pct": 10,
+
+  "pacing_max_cue_rate_pct": 15,
+
+  "pacing_video_adjust": true,
+
+  "pacing_imperceptible_threshold": 0.012,
+
+  "max_rate_pct": 15,
+
+  "gemini_min_overflow_ratio": 1.12,
+
+  "gemini_skip_merge": true,
+
+  "gemini_skip_suspicious": true,
+
+  "use_zh_compress_strategy": true,
+
+  "zh_strategy_path": "gemini-code-1780751633188.yaml",
+
+  "build_strategy_samples": 25,
+
+  "subtitle_display_max_zh": 22,
+
+  "subtitle_display_max_en": 44,
+
+  "detect_mistranslation": true,
+
+  "merge_zh_sentences": true,
+
+  "merge_max_gap": 1.5,
+
+  "merge_pause_threshold_min": 0.45,
+
+  "merge_pause_threshold_max": 2.5,
+
+  "dub_batch_merge_size": 0,
+
+  "dub_split_by_sentence": false,
+
+  "dub_anchor_window": true,
+
+  "dub_fill_window": false,
+
+  "speech_activity_align": true,
+
+  "speech_activity_short_pause": 0.8,
+
+  "speech_activity_long_pause": 2.0,
+
+  "speech_activity_vad_noise_db": -35,
+
+  "speech_activity_min_silence": 0.3,
+
+  "speech_activity_tts_ok_ratio": 1.15,
+
+  "speech_activity_tts_fail_ratio": 1.30,
+
+  "speech_activity_chars_per_sec": 3.2,
+
+  "speech_activity_target_fill": 0.68,
+
+  "speech_activity_max_tempo": 1.22,
+
+  "speech_activity_hard_max_tempo": 1.32,
+
+  "fit_dub_target_fill": 0.68,
+
+  "fit_dub_max_fill": 0.88,
+
+  "fit_dub_min_fill": 0.55,
+
+  "dub_never_truncate": true,
+
+  "speech_activity_end_buffer_sec": 0,
+
+  "speech_activity_fade_out_ms": 0,
+
+  "speech_activity_continuation_slack_sec": 1.5,
+
+  "speech_window_soft": true,
+
+  "speech_window_split_enabled": false,
+
+  "speech_natural_grouping": true,
+
+  "speech_merge_gap_sec": 2.0,
+
+  "speech_grouping_must_merge_gap_sec": 1.0,
+
+  "speech_grouping_hard_pause_sec": 3.0,
+
+  "speech_group_max_duration_sec": 25.0,
+
+  "vad_preserve_pause": true,
+
+  "long_pause_sec": 2.0,
+
+  "optimize_subtitle": true,
+
+  "ai_provider": "self",
+
+  "gemini_rewrite": true,
+
+  "gemini_only_problem_cues": true,
+
+  "gemini_preflight": true,
+
+  "gemini_preflight_block": true,
+
+  "gemini_min_source_ratio": 0.5,
+
+  "gemini_source_if_long_ratio": 0.333,
+
+  "gemini_source_universal_long_ratio": 0.667,
+
+  "min_cue_sec": 1.0,
+
+  "short_zh_merge_max_chars": 8,
+
+  "zh_en_char_ratio": 1.0,
+
+  "gemini_rewrite_batch": 20,
+
+  "dub_one_tts_per_cue": true,
+
+  "dub_translate_once": true,
+
+  "gemini_dub_rewrite": false,
+
+  "gemini_post_tts_rewrite": false,
+
+  "gemini_chunk_translate": false,
+
+  "chunk_gap_sec": 2.0,
+
+  "chunk_chars_per_sec": 4.5,
+
+  "gemini_log": true,
+
+  "gemini_log_mirror": true,
+
+  "ai_shorten_model_gemini": "gemini-2.5-flash-lite",
+
+  "_comment": "策略：dub_translate_once=翻译仅 fit_translate 一次 Gemini；配音阶段不调 AI。Gemini Key 见 GEMINI_API_KEY_SETUP.txt"
+
+}
+

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "source": "notebooklm",
+  "course": "AWS 课程示例",
+  "notes": "由 NotebookLM 归纳：删套话、动宾压缩、并列合并",
+  "drop_phrases": [
+    "我们需要",
+    "你可以",
+    "实际上",
+    "在这种情况下"
+  ],
+  "literal_replacements": [
+    ["进行配置", "配置"],
+    ["来实现", ""],
+    ["设置一个", "设置"]
+  ],
+  "regex_replacements": [
+    ["，并且", "，"],
+    ["的是", "是"]
+  ]
+}

@@ -1,0 +1,6 @@
+tubeget.secrets.json
+.env
+gemini.env
+set_gemini_env.bat
+*.dub-work/
+__pycache__/

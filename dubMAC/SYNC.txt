@@ -1,0 +1,9 @@
+Windows 更新 components 脚本后，请在项目根目录执行：
+
+  powershell -File sync_to_dubMAC.ps1
+
+然后将整个 dubMAC 文件夹拷到 Mac（或 Git push/pull）。
+
+Mac 专用入口（sync 不覆盖）：dub_local.sh、notebooklm_dub_*.sh、quick_bilingual_dub.sh、make_study_srt.sh、说明.md
+
+components/ 与 merge_dub_tool/ 由 sync 从 Windows 侧生成。

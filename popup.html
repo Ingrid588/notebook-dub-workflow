@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Volume Controller</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>影子调音</h1>
+      <p class="subtitle">原生立体声 + 软闪避，不劫持 Web Audio</p>
+    </header>
+
+    <main>
+      <label class="slider-row" for="volumeSlider">
+        <span>原视频音量</span>
+        <span id="volumeLabel">100%</span>
+      </label>
+      <input
+        id="volumeSlider"
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        value="100"
+      />
+
+      <div class="presets">
+        <button type="button" data-volume="0">静音</button>
+        <button type="button" data-volume="0.25">25%</button>
+        <button type="button" data-volume="0.5">50%</button>
+        <button type="button" data-volume="1">100%</button>
+      </div>
+
+      <section id="status" class="status" aria-live="polite">
+        <p id="statusText">正在检测当前标签页…</p>
+      </section>
+
+      <section class="actions">
+        <button id="testDuckBtn" type="button" class="btn-test">测试闪避配音</button>
+        <button id="resetBtn" type="button" class="btn-reset">重置音频</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>原视频走浏览器原生轨道；配音时自动将 video.volume 降至 15%。</p>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

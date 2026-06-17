@@ -1,0 +1,44 @@
+# Gemini API Key: Windows user environment variable GEMINI_API_KEY only.
+
+# See components\GEMINI_API_KEY_SETUP.txt — do NOT store keys in repo files.
+
+
+
+Windows .bat files MUST be ASCII-only (bytes 0-127).
+
+Do NOT put Chinese or UTF-8 text inside .bat file bodies.
+
+
+
+Two routes — see WORKFLOWS.txt at repo root.
+
+
+
+Route A (learn / NotebookLM experiment):
+
+  quick_bilingual_dub.bat       direct dub preview, no Gemini pipeline
+
+
+
+Route B (commercial / Gemini API):
+
+  fit_translate.bat             fit-window translate -> *.fit-dub.srt
+
+  commercial_dub_test.bat       single folder (run_batch_course.py --work-dir)
+
+  commercial_dub_batch.bat      multi-chapter batch (run_batch_course.py)
+
+  product_dub_test.bat          legacy alias -> commercial_dub_test.bat
+
+  course_batch_dub.bat          legacy alias -> commercial_dub_batch.bat
+
+
+
+Config:
+
+  config.bat                    Gemini model/options (no API Key)
+
+
+
+Do NOT use run_batch.py for Route B (thin legacy wrapper).
+

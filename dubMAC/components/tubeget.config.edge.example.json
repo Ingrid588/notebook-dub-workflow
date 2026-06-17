@@ -1,0 +1,22 @@
+{
+  "voice": "云希",
+  "engine": "edge",
+  "rate": "-5%",
+  "original_vol": 0.12,
+  "dub_vol": 3.0,
+  "require_complete_dub": true,
+  "use_local_fallback": true,
+  "retry_edge_for_local": true,
+  "tts_concurrency": 1,
+  "edge_per_cue_delay_sec": 1.0,
+  "edge_retries": 6,
+  "edge_max_text_len": 450,
+  "edge_rate_limit_cooldown_sec": 60,
+  "edge_serial_only": true,
+  "edge_retry_failed_rounds": 3,
+  "edge_local_retry_wait_sec": 90,
+  "edge_local_retry_rounds": 3,
+  "edge_local_retry_interval_sec": 240,
+  "local_voice": "zhiwei",
+  "local_voice_gender": "male"
+}
